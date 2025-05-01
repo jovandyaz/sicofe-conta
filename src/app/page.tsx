@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { Button } from '@/components/ui';
 
 export default function Home() {
   return (
@@ -29,12 +30,19 @@ export default function Home() {
         </p>
 
         <div className="flex flex-col gap-4 sm:flex-row sm:space-x-4">
-          <button className="rounded-md bg-[color:var(--sicofe-purple)] px-6 py-3 text-lg text-white shadow-md transition-colors hover:bg-[color:var(--sicofe-purple-dark)]">
+          <Button
+            size="lg"
+            className="bg-[color:var(--sicofe-purple)] hover:bg-[color:var(--sicofe-purple-dark)] text-white"
+          >
             Contáctanos
-          </button>
-          <button className="rounded-md border-2 border-[color:var(--sicofe-purple)] px-6 py-3 text-lg text-[color:var(--sicofe-purple)] transition-colors hover:bg-[color:var(--sicofe-purple-light)] hover:text-white">
+          </Button>
+          <Button
+            size="lg"
+            variant="outline"
+            className="border-[color:var(--sicofe-purple)] text-[color:var(--sicofe-purple)] hover:bg-[color:var(--sicofe-purple)] hover:text-white"
+          >
             Nuestros Servicios
-          </button>
+          </Button>
         </div>
 
         <div className="mt-12 flex items-center">
