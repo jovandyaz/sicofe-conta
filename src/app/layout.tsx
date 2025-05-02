@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { Navbar } from '@/components';
+import { Footer, Navbar } from '@/components';
 import { figtree } from '@/components/ui/fonts';
 import { cn } from '@/lib/utils';
 import { Analytics } from '@vercel/analytics/next';
@@ -30,6 +30,7 @@ export default function RootLayout({
           <Navbar />
         </header>
         <main className="w-full flex-grow">{children}</main>
+        <Footer />
         <Analytics />
         <Toaster position="bottom-right" />
       </body>

@@ -131,6 +131,40 @@
   }
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient-slow {
+  animation: gradient 15s ease infinite;
+  background-size: 200% 200%;
+  background-position: 0% 50%;
+}
+
+.bg-gradient-hero {
+  background: linear-gradient(
+    135deg,
+    #f5f5ff 0%,
+    rgba(var(--sicofe-purple-light), 0.05) 25%,
+    rgba(var(--sicofe-purple), 0.1) 50%,
+    rgba(var(--sicofe-purple-light), 0.05) 75%,
+    #f5f5ff 100%
+  );
+}
+
+.hero-circle {
+  @apply absolute rounded-full bg-gradient-to-br from-[color:var(--sicofe-purple-light)] to-[color:var(--sicofe-purple)] opacity-20;
+  filter: blur(30px);
+}
+
 html,
 body {
   background-color: var(--background);

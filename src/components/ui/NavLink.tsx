@@ -59,7 +59,7 @@ export const NavLink = ({
         {isActive && !isMobile && (!highlighted || isMobile) && (
           <motion.span
             layoutId={layoutId}
-            className="absolute right-0 -bottom-2 left-0 h-0.5 bg-yellow-400 dark:bg-white"
+            className="absolute right-0 -bottom-2 left-0 h-0.5 bg-purple-700 dark:bg-white"
             initial={false}
             transition={{ duration: 0.3 }}
           />
@@ -69,7 +69,7 @@ export const NavLink = ({
           {!isActive && !isMobile && isHovered && !highlighted && (
             <motion.span
               key="hover-underline"
-              className="absolute right-0 -bottom-2 left-0 h-0.5 bg-yellow-300 dark:bg-gray-600"
+              className="absolute right-0 -bottom-2 left-0 h-0.5 bg-purple-600 dark:bg-gray-600"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
