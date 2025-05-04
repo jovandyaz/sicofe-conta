@@ -52,10 +52,8 @@ const HeroSection = () => {
       {/* Right Content - Logo */}
       <div className="relative z-10 order-1 flex flex-1 items-center justify-center p-8 md:order-2">
         <div className="relative aspect-square w-full max-w-md">
-          <div className="absolute -inset-4 rounded-full bg-white/80 backdrop-blur-sm"></div>
-          <div className="absolute inset-0 rounded-full bg-gradient-to-br from-white to-white/50 opacity-90"></div>
           <Image
-            src="/sicofe_conta.png"
+            src="/sicofe_logo.png"
             alt="SICOFE Contabilidad"
             fill
             style={{ objectFit: 'contain' }}
@@ -68,7 +66,6 @@ const HeroSection = () => {
   );
 };
 
-// ServiceSection component
 const ServiceSection = ({
   title,
   description,
@@ -124,7 +121,6 @@ export default function Home() {
       {/* Hero Section */}
       <HeroSection />
 
-      {/* "We're not just..." section inspired by VaynerMedia */}
       <div className="relative flex min-h-[50vh] flex-col items-center justify-center px-4 py-20 text-center">
         <h2 className="mb-6 text-3xl font-bold md:text-5xl">No somos solo un</h2>
         <div className="relative mb-6 h-16 overflow-hidden md:h-24">

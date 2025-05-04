@@ -2,7 +2,7 @@
 
 import React, { JSX, useState } from 'react';
 import Link from 'next/link';
-import { IconLogo, MenuButton, NavLink } from '@/components/ui';
+import { IconLogo, MenuButton, NavLink, ThemeToggle } from '@/components/ui';
 import { cn } from '@/lib/utils';
 import { AnimatePresence, motion, useMotionValueEvent, useScroll } from 'motion/react';
 
@@ -63,7 +63,7 @@ export const FloatingNav = ({
           duration: 0.2
         }}
         className={cn(
-          'z-5000 flex w-full items-center justify-between bg-white p-4 dark:border-gray-800 dark:bg-black',
+          'bg-background dark:border-border z-5000 flex w-full items-center justify-between p-4',
           className
         )}
       >
@@ -82,9 +82,15 @@ export const FloatingNav = ({
               {navItem.name}
             </NavLink>
           ))}
+          <div className="ml-2">
+            <ThemeToggle />
+          </div>
         </div>
 
-        <MenuButton isOpen={isMenuOpen} toggle={toggleMenu} />
+        <div className="flex items-center space-x-2 md:hidden">
+          <ThemeToggle />
+          <MenuButton isOpen={isMenuOpen} toggle={toggleMenu} />
+        </div>
 
         <AnimatePresence>
           {isMenuOpen && (
@@ -93,7 +99,7 @@ export const FloatingNav = ({
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.2 }}
-              className="absolute top-0 right-0 left-0 min-h-screen bg-white px-6 py-20 md:hidden"
+              className="bg-background absolute top-0 right-0 left-0 min-h-screen px-6 py-20 md:hidden"
               id="mobile-menu"
             >
               <div className="flex flex-col space-y-4">

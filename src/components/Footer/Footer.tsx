@@ -29,17 +29,17 @@ export const socialLinks = [
 
 export const Footer = () => {
   return (
-    <footer className="w-full bg-white px-4 pt-16 pb-8 shadow-sm md:px-6">
+    <footer className="bg-background border-border w-full border-t px-4 pt-16 pb-8 shadow-sm md:px-6">
       <div className="mx-auto max-w-7xl">
         {/* CTA Section */}
-        <div className="mb-16 rounded-xl bg-gradient-to-r from-purple-50 to-white p-8">
+        <div className="from-secondary to-background dark:from-secondary/20 dark:to-background mb-16 rounded-xl bg-gradient-to-r p-8">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between">
             <div className="mb-8 md:mb-0">
               <h3 className="text-2xl font-bold text-[color:var(--sicofe-purple)] md:text-3xl">
                 Encuentra soluciones para tu{' '}
                 <span className="border-b-2 border-[color:var(--sicofe-purple)]">negocio</span>
               </h3>
-              <p className="mt-2 text-lg text-gray-700 md:max-w-md">
+              <p className="text-foreground/80 mt-2 text-lg md:max-w-md">
                 Contacta con nuestro equipo y descubre cómo podemos ayudarte.
               </p>
             </div>
@@ -55,7 +55,7 @@ export const Footer = () => {
         </div>
 
         {/* Main Footer Content */}
-        <div className="border-t border-purple-100 pt-16">
+        <div className="border-border border-t pt-16">
           <div className="grid grid-cols-1 gap-10 md:grid-cols-4 lg:grid-cols-5">
             {/* Brand & Social */}
             <div className="col-span-1 lg:col-span-2">
@@ -70,7 +70,7 @@ export const Footer = () => {
                 <span className="text-xl font-bold text-[color:var(--sicofe-purple)]">SICOFE</span>
               </Link>
 
-              <p className="mb-6 text-base text-gray-600 md:max-w-md">
+              <p className="text-foreground/70 mb-6 text-base md:max-w-md">
                 Servicios contables profesionales desde 2016. Ofrecemos soluciones financieras y
                 contables personalizadas para empresas y particulares.
               </p>
@@ -82,7 +82,7 @@ export const Footer = () => {
                     href={link.href}
                     label={link.label}
                     icon={link.icon}
-                    className="rounded-full p-2 text-[color:var(--sicofe-purple)] transition-colors duration-200 hover:bg-purple-50 hover:text-[color:var(--sicofe-purple-dark)]"
+                    className="hover:bg-secondary rounded-full p-2 text-[color:var(--sicofe-purple)] transition-colors duration-200 hover:text-[color:var(--sicofe-purple-dark)]"
                   />
                 ))}
               </div>
@@ -99,7 +99,7 @@ export const Footer = () => {
                     <li key={item.label}>
                       <Link
                         href={item.href}
-                        className="text-gray-600 decoration-purple-300 transition-colors duration-200 hover:text-[color:var(--sicofe-purple)] hover:underline"
+                        className="text-foreground/70 decoration-[color:var(--sicofe-purple-light)] transition-colors duration-200 hover:text-[color:var(--sicofe-purple)] hover:underline"
                       >
                         {item.label}
                       </Link>
@@ -112,7 +112,7 @@ export const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="border-opacity-20 mt-16 flex flex-col border-t border-purple-100 pt-6 text-sm text-gray-500 md:flex-row md:items-center md:justify-between">
+        <div className="border-border text-foreground/60 mt-16 flex flex-col border-t pt-6 text-sm md:flex-row md:items-center md:justify-between">
           <div>&copy; {CURRENT_YEAR} SICOFE Contabilidad. Todos los derechos reservados.</div>
           <div className="mt-2 md:mt-0">Diseñado con ♥️ en México</div>
         </div>

@@ -41,16 +41,10 @@ export const NavLink = ({
           'inline-block text-lg font-bold transition-colors',
           !isMobile && highlighted
             ? [
-                'border-primary-600 rounded-md border-3 px-3 py-2',
-                isActive || isHovered
-                  ? 'text-primary-600 dark:text-primary-500'
-                  : 'text-gray-600 dark:text-gray-300'
+                'rounded-md border-3 border-[color:var(--sicofe-purple)] px-3 py-2',
+                isActive || isHovered ? 'text-[color:var(--sicofe-purple)]' : 'text-foreground/80'
               ]
-            : [
-                isActive
-                  ? 'text-gray-900 dark:text-white'
-                  : 'text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white'
-              ],
+            : [isActive ? 'text-foreground' : 'text-foreground/70 hover:text-foreground'],
           className
         )}
       >
@@ -59,7 +53,7 @@ export const NavLink = ({
         {isActive && !isMobile && (!highlighted || isMobile) && (
           <motion.span
             layoutId={layoutId}
-            className="absolute right-0 -bottom-2 left-0 h-0.5 bg-purple-700 dark:bg-white"
+            className="absolute right-0 -bottom-2 left-0 h-0.5 bg-[color:var(--sicofe-purple)]"
             initial={false}
             transition={{ duration: 0.3 }}
           />
@@ -69,7 +63,7 @@ export const NavLink = ({
           {!isActive && !isMobile && isHovered && !highlighted && (
             <motion.span
               key="hover-underline"
-              className="absolute right-0 -bottom-2 left-0 h-0.5 bg-purple-600 dark:bg-gray-600"
+              className="absolute right-0 -bottom-2 left-0 h-0.5 bg-[color:var(--sicofe-purple-light)]"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}

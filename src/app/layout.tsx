@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { Footer, Navbar } from '@/components';
-import { figtree } from '@/components/ui/fonts';
+import { ThemeProvider, figtree } from '@/components/ui';
 import { cn } from '@/lib/utils';
 import { Analytics } from '@vercel/analytics/next';
 import { Toaster } from 'sonner';
@@ -21,18 +21,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
+    <html lang="es" suppressHydrationWarning>
       <body
         className={cn(figtree.className, 'flex min-h-screen flex-col antialiased')}
         suppressHydrationWarning
       >
-        <header className="w-full">
-          <Navbar />
-        </header>
-        <main className="w-full flex-grow">{children}</main>
-        <Footer />
-        <Analytics />
-        <Toaster position="bottom-right" />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <header className="w-full">
+            <Navbar />
+          </header>
+          <main className="w-full flex-grow">{children}</main>
+          <Footer />
+          <Analytics />
+          <Toaster position="bottom-right" />
+        </ThemeProvider>
       </body>
     </html>
   );

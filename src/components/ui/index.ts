@@ -5,3 +5,5 @@ export * from './icon-logo';
 export * from './MenuButton';
 export * from './NavLink';
 export * from './SocialLink';
+export * from './theme-toggle';
+export * from './theme-provider';
