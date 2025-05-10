@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Button, ScrollReveal } from '@/components';
+import { ScrollReveal } from '@/components';
 
 export const ContactSection = () => {
   return (

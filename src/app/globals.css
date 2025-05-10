@@ -45,6 +45,9 @@
   --color-sicofe-purple: var(--sicofe-purple);
   --color-sicofe-purple-light: var(--sicofe-purple-light);
   --color-sicofe-purple-dark: var(--sicofe-purple-dark);
+  --color-sicofe-blue: var(--sicofe-blue);
+  --color-sicofe-blue-light: var(--sicofe-blue-light);
+  --color-sicofe-blue-dark: var(--sicofe-blue-dark);
 }
 
 :root {
@@ -57,8 +60,8 @@
   --popover-foreground: oklch(0.145 0 0);
   --primary: var(--sicofe-purple);
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.96 0.05 315);
-  --secondary-foreground: oklch(0.2 0 0);
+  --secondary: var(--sicofe-blue);
+  --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
   --accent: oklch(0.93 0.07 315);
@@ -83,6 +86,9 @@
   --sicofe-purple: oklch(0.5 0.17 315);
   --sicofe-purple-light: oklch(0.58 0.14 315);
   --sicofe-purple-dark: oklch(0.45 0.2 315);
+  --sicofe-blue: oklch(0.4 0.15 240);
+  --sicofe-blue-light: oklch(0.5 0.12 240);
+  --sicofe-blue-dark: oklch(0.3 0.18 240);
 }
 
 .dark {
@@ -94,7 +100,7 @@
   --popover-foreground: oklch(0.985 0 0);
   --primary: var(--sicofe-purple);
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.32 0.1 315);
+  --secondary: var(--sicofe-blue);
   --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.269 0 0);
   --muted-foreground: oklch(0.708 0 0);
@@ -120,6 +126,9 @@
   --sicofe-purple: oklch(0.53 0.18 315);
   --sicofe-purple-light: oklch(0.6 0.15 315);
   --sicofe-purple-dark: oklch(0.48 0.21 315);
+  --sicofe-blue: oklch(0.45 0.15 240);
+  --sicofe-blue-light: oklch(0.55 0.12 240);
+  --sicofe-blue-dark: oklch(0.35 0.18 240);
 }
 
 @layer base {
