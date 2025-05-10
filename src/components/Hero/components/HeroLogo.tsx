@@ -23,7 +23,7 @@ export const HeroLogo = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className="relative z-10 bg-[#0f0f19] px-4 text-center font-mono text-sm font-medium tracking-widest text-[color:var(--sicofe-purple-light)] dark:bg-gray-950 dark:text-purple-400"
+            className="relative z-10 bg-[#f7f7fd] px-4 text-center font-mono text-sm font-medium tracking-widest text-[color:var(--sicofe-purple)] dark:bg-[#0f0f19] dark:text-[color:var(--sicofe-purple-light)]"
           >
             EST. 2016
           </motion.span>
@@ -87,7 +87,7 @@ export const HeroLogo = () => {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.2 }}
-            className="relative z-10 bg-[#0f0f19] px-4 text-center text-sm font-medium tracking-[0.3em] text-[color:var(--sicofe-purple-light)] dark:bg-gray-950 dark:text-purple-400"
+            className="relative z-10 bg-[#f7f7fd] px-4 text-center text-sm font-medium tracking-[0.3em] text-[color:var(--sicofe-purple)] dark:bg-[#0f0f19] dark:text-[color:var(--sicofe-purple-light)]"
           >
             CONTABILIDAD
           </motion.span>

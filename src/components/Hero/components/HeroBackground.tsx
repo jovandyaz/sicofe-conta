@@ -16,14 +16,14 @@ export const HeroBackground = () => {
   return (
     <div className="pointer-events-none absolute inset-0 overflow-hidden">
       {/* Enhanced Grid Pattern with secondary color (blue) */}
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBzdHJva2U9IiMxZTQwYWYiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgb3BhY2l0eT0iMC4yIj48cGF0aCBkPSJNMCAwaDQwdjQwSDB6Ii8+PC9nPjwvc3ZnPg==')]" />
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBzdHJva2U9IiM4ODhhZmYiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNMCAwaDQwdjQwSDB6Ii8+PC9nPjwvc3ZnPg==')] dark:bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBzdHJva2U9IiMxZTQwYWYiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgb3BhY2l0eT0iMC4yIj48cGF0aCBkPSJNMCAwaDQwdjQwSDB6Ii8+PC9nPjwvc3ZnPg==')]" />
 
       {/* Subtle Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#0f0f19]/60 via-transparent to-[#0f0f19]/80"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-[#f7f7fd]/60 via-transparent to-[#f7f7fd]/80 dark:from-[#0f0f19]/60 dark:via-transparent dark:to-[#0f0f19]/80"></div>
 
       {/* Abstract Shapes with Subtle Animations */}
       <motion.div
-        className="absolute top-32 -right-20 h-[500px] w-[500px] rounded-full bg-gradient-to-br from-[color:var(--sicofe-purple-light)]/15 to-[color:var(--sicofe-purple-dark)]/10 blur-3xl"
+        className="absolute top-32 -right-20 h-[500px] w-[500px] rounded-full bg-gradient-to-br from-[color:var(--sicofe-purple-light)]/10 to-[color:var(--sicofe-purple-dark)]/5 blur-3xl dark:from-[color:var(--sicofe-purple-light)]/15 dark:to-[color:var(--sicofe-purple-dark)]/10"
         animate={{
           y: [0, 30, 0],
           opacity: [0.3, 0.5, 0.3],
@@ -37,7 +37,7 @@ export const HeroBackground = () => {
       />
 
       <motion.div
-        className="absolute top-1/2 -left-32 h-[600px] w-[600px] rounded-full bg-gradient-to-tr from-[color:var(--sicofe-purple)]/15 to-[color:var(--sicofe-purple-dark)]/10 blur-3xl"
+        className="absolute top-1/2 -left-32 h-[600px] w-[600px] rounded-full bg-gradient-to-tr from-[color:var(--sicofe-purple)]/10 to-[color:var(--sicofe-purple-dark)]/5 blur-3xl dark:from-[color:var(--sicofe-purple)]/15 dark:to-[color:var(--sicofe-purple-dark)]/10"
         animate={{
           y: [0, -40, 0],
           opacity: [0.2, 0.4, 0.2],
@@ -53,7 +53,7 @@ export const HeroBackground = () => {
 
       {/* Additional Animated Elements */}
       <motion.div
-        className="absolute right-1/4 bottom-40 h-[300px] w-[300px] rounded-full bg-gradient-to-tl from-[color:var(--sicofe-blue)]/10 to-[color:var(--sicofe-blue-dark)]/5 blur-3xl"
+        className="absolute right-1/4 bottom-40 h-[300px] w-[300px] rounded-full bg-gradient-to-tl from-[color:var(--sicofe-blue)]/5 to-[color:var(--sicofe-blue-dark)]/3 blur-3xl dark:from-[color:var(--sicofe-blue)]/10 dark:to-[color:var(--sicofe-blue-dark)]/5"
         animate={{
           y: [0, 20, 0],
           opacity: [0.2, 0.3, 0.2],

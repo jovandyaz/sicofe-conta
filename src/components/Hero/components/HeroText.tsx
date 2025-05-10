@@ -9,7 +9,7 @@ export const HeroText = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 1.4 }}
-        className="text-center text-lg leading-relaxed text-gray-300 md:my-6 md:text-xl lg:text-2xl dark:text-gray-300"
+        className="text-center text-lg leading-relaxed text-gray-700 md:my-6 md:text-xl lg:text-2xl dark:text-gray-300"
       >
         Transformamos la contabilidad tradicional con soluciones
         <motion.span
@@ -17,9 +17,9 @@ export const HeroText = () => {
           whileHover={{ scale: 1.05 }}
           transition={{ type: 'spring', stiffness: 300 }}
         >
-          <span className="absolute inset-0 -rotate-1 transform rounded bg-[color:var(--sicofe-blue)]/15 dark:bg-blue-500/15"></span>
+          <span className="absolute inset-0 -rotate-1 transform rounded bg-[color:var(--sicofe-blue)]/10 dark:bg-[color:var(--sicofe-blue)]/15"></span>
           <motion.span
-            className="relative text-[color:var(--sicofe-blue)] dark:text-blue-400"
+            className="relative text-[color:var(--sicofe-blue-dark)] dark:text-[color:var(--sicofe-blue)]"
             animate={{
               textShadow: [
                 '0 0 5px rgba(var(--sicofe-blue-light), 0.1)',
@@ -41,7 +41,7 @@ export const HeroText = () => {
 
       {/* Visual separator */}
       <motion.div
-        className="mx-auto mt-8 h-px w-24 bg-gradient-to-r from-transparent via-[color:var(--sicofe-purple-light)]/50 to-transparent"
+        className="mx-auto mt-8 h-px w-24 bg-gradient-to-r from-transparent via-[color:var(--sicofe-purple)]/50 to-transparent"
         initial={{ scaleX: 0, opacity: 0 }}
         animate={{ scaleX: 1, opacity: 1 }}
         transition={{ duration: 1, delay: 1.8 }}

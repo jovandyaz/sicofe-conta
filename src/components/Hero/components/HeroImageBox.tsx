@@ -11,21 +11,21 @@ export const HeroImageBox = () => {
       transition={{ duration: 1, delay: 0.3 }}
       className="relative z-10 flex flex-1 items-center justify-center px-8 lg:px-0"
     >
-      <div className="relative aspect-square w-full max-w-md overflow-hidden rounded-2xl bg-[#1a1a2e]/80 p-4 shadow-[0_20px_50px_rgba(var(--sicofe-purple-dark),0.2)] backdrop-blur-sm dark:bg-gray-800/80">
+      <div className="relative aspect-square w-full max-w-md overflow-hidden rounded-2xl bg-white/20 p-4 shadow-[0_20px_50px_rgba(var(--sicofe-purple),0.10)] backdrop-blur-md dark:bg-[#1a1a2e]/80 dark:shadow-[0_20px_50px_rgba(var(--sicofe-purple-dark),0.2)]">
         {/* Inner container with gradient background */}
         <div className="absolute inset-0 overflow-hidden rounded-2xl">
-          <div className="absolute inset-0 bg-gradient-to-br from-[#1a1a2e] to-[#2a2a40] dark:from-gray-800 dark:to-gray-900" />
+          <div className="absolute inset-0 bg-gradient-to-br from-white/40 to-[#f0f0fa]/30 dark:from-[#1a1a2e] dark:to-[#2a2a40]" />
 
           {/* Animated light effect */}
           <motion.div
-            className="absolute inset-0 opacity-50"
+            className="absolute inset-0 opacity-40"
             animate={{
               background: [
-                'radial-gradient(circle at 30% 30%, rgba(var(--sicofe-purple-light), 0.4) 0%, rgba(var(--sicofe-purple-light), 0) 70%)',
-                'radial-gradient(circle at 70% 70%, rgba(var(--sicofe-purple), 0.4) 0%, rgba(var(--sicofe-purple), 0) 70%)',
-                'radial-gradient(circle at 30% 70%, rgba(var(--sicofe-purple-light), 0.4) 0%, rgba(var(--sicofe-purple-light), 0) 70%)',
-                'radial-gradient(circle at 70% 30%, rgba(var(--sicofe-purple), 0.4) 0%, rgba(var(--sicofe-purple), 0) 70%)',
-                'radial-gradient(circle at 30% 30%, rgba(var(--sicofe-purple-light), 0.4) 0%, rgba(var(--sicofe-purple-light), 0) 70%)'
+                'radial-gradient(circle at 30% 30%, rgba(var(--sicofe-purple-light), 0.2) 0%, rgba(var(--sicofe-purple-light), 0) 70%)',
+                'radial-gradient(circle at 70% 70%, rgba(var(--sicofe-purple), 0.2) 0%, rgba(var(--sicofe-purple), 0) 70%)',
+                'radial-gradient(circle at 30% 70%, rgba(var(--sicofe-purple-light), 0.2) 0%, rgba(var(--sicofe-purple-light), 0) 70%)',
+                'radial-gradient(circle at 70% 30%, rgba(var(--sicofe-purple), 0.2) 0%, rgba(var(--sicofe-purple), 0) 70%)',
+                'radial-gradient(circle at 30% 30%, rgba(var(--sicofe-purple-light), 0.2) 0%, rgba(var(--sicofe-purple-light), 0) 70%)'
               ]
             }}
             transition={{
@@ -35,8 +35,8 @@ export const HeroImageBox = () => {
             }}
           />
 
-          {/* Subtle grid pattern overlay */}
-          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBzdHJva2U9IiNmZmYiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTAgMGgyMHYyMEgweiIvPjwvZz48L3N2Zz4=')] opacity-40" />
+          {/* Smaller grid pattern overlay - 20x20 instead of 40x40 */}
+          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBzdHJva2U9IiM4ODhhZmYiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgb3BhY2l0eT0iMC4xNSI+PHBhdGggZD0iTTAgMGgyMHYyMEgweiIvPjwvZz48L3N2Zz4=')] opacity-35 dark:bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBzdHJva2U9IiNmZmYiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgb3BhY2l0eT0iMC4wOCI+PHBhdGggZD0iTTAgMGgyMHYyMEgweiIvPjwvZz48L3N2Zz4=')] dark:opacity-40" />
         </div>
 
         {/* Logo container with hover effect */}
@@ -88,14 +88,14 @@ export const HeroImageBox = () => {
 
         {/* Floating accounting elements with enhanced visuals */}
         <motion.div
-          className="absolute -top-6 -right-6 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-[#2a2a40] to-[#1a1a2e] shadow-lg backdrop-blur-md dark:from-gray-700 dark:to-gray-800"
+          className="absolute -top-6 -right-6 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-[#f0f0fa]/60 to-white/60 shadow-lg backdrop-blur-md dark:from-[#2a2a40] dark:to-[#1a1a2e]"
           animate={{
             y: [0, 10, 0],
             rotate: [0, 5, 0],
             boxShadow: [
-              '0 5px 15px rgba(var(--sicofe-purple-light), 0.3)',
-              '0 10px 25px rgba(var(--sicofe-purple), 0.5)',
-              '0 5px 15px rgba(var(--sicofe-purple-light), 0.3)'
+              '0 5px 15px rgba(var(--sicofe-purple-light), 0.2)',
+              '0 10px 25px rgba(var(--sicofe-purple), 0.3)',
+              '0 5px 15px rgba(var(--sicofe-purple-light), 0.2)'
             ]
           }}
           transition={{
@@ -108,14 +108,14 @@ export const HeroImageBox = () => {
         </motion.div>
 
         <motion.div
-          className="absolute -bottom-4 left-10 flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-r from-[#2a2a40] to-[#1a1a2e] shadow-lg backdrop-blur-md dark:from-gray-700 dark:to-gray-800"
+          className="absolute -bottom-4 left-10 flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-r from-[#f0f0fa]/60 to-white/60 shadow-lg backdrop-blur-md dark:from-[#2a2a40] dark:to-[#1a1a2e]"
           animate={{
             y: [0, -8, 0],
             rotate: [0, -3, 0],
             boxShadow: [
-              '0 5px 15px rgba(var(--sicofe-purple-light), 0.3)',
-              '0 10px 25px rgba(var(--sicofe-purple), 0.5)',
-              '0 5px 15px rgba(var(--sicofe-purple-light), 0.3)'
+              '0 5px 15px rgba(var(--sicofe-purple-light), 0.2)',
+              '0 10px 25px rgba(var(--sicofe-purple), 0.3)',
+              '0 5px 15px rgba(var(--sicofe-purple-light), 0.2)'
             ]
           }}
           transition={{
@@ -130,14 +130,14 @@ export const HeroImageBox = () => {
 
         {/* Additional floating element */}
         <motion.div
-          className="absolute -right-4 -bottom-6 flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-r from-[#2a2a40] to-[#1a1a2e] shadow-lg backdrop-blur-md dark:from-gray-700 dark:to-gray-800"
+          className="absolute -right-4 -bottom-6 flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-r from-[#f0f0fa]/60 to-white/60 shadow-lg backdrop-blur-md dark:from-[#2a2a40] dark:to-[#1a1a2e]"
           animate={{
             y: [0, 6, 0],
             rotate: [0, 2, 0],
             boxShadow: [
-              '0 5px 15px rgba(var(--sicofe-blue-light), 0.3)',
-              '0 10px 25px rgba(var(--sicofe-blue), 0.5)',
-              '0 5px 15px rgba(var(--sicofe-blue-light), 0.3)'
+              '0 5px 15px rgba(var(--sicofe-blue-light), 0.2)',
+              '0 10px 25px rgba(var(--sicofe-blue), 0.3)',
+              '0 5px 15px rgba(var(--sicofe-blue-light), 0.2)'
             ]
           }}
           transition={{
