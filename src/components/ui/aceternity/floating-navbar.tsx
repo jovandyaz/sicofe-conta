@@ -63,7 +63,7 @@ export const FloatingNav = ({
           duration: 0.2
         }}
         className={cn(
-          'bg-background dark:border-border z-5000 flex w-full items-center justify-between p-4',
+          'bg-background/70 dark:bg-background/50 dark:border-border z-5000 flex w-full items-center justify-between p-4 backdrop-blur-md',
           className
         )}
       >
@@ -99,7 +99,7 @@ export const FloatingNav = ({
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.2 }}
-              className="bg-background absolute top-0 right-0 left-0 min-h-screen px-6 py-20 md:hidden"
+              className="bg-background/80 dark:bg-background/60 absolute top-0 right-0 left-0 min-h-screen px-6 py-20 backdrop-blur-md md:hidden"
               id="mobile-menu"
             >
               <div className="flex flex-col space-y-4">
