@@ -1,7 +1,7 @@
 'use client';
 
 import { useRef } from 'react';
-import { HeroBackground, HeroImageBox, HeroLogo, HeroText } from './components';
+import { HeroBackground, HeroImageBox, HeroText } from './components';
 
 export const Hero = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -15,8 +15,6 @@ export const Hero = () => {
         <HeroBackground />
 
         <div className="z-10 flex flex-1 flex-col items-center justify-center py-20 text-center md:text-center lg:items-center lg:py-0">
-          <HeroLogo />
-
           <HeroText />
         </div>
 

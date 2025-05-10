@@ -3,15 +3,15 @@ import { FloatingNav } from '@/components/ui';
 const navItems = [
   {
     name: 'Nosotros',
-    link: '/nosotros'
+    link: '/AboutUs'
   },
   {
     name: 'Servicios',
-    link: '/servicios'
+    link: '/services'
   },
   {
     name: 'Contacto',
-    link: '/contacto',
+    link: '/contact',
     highlighted: true
   }
 ];
