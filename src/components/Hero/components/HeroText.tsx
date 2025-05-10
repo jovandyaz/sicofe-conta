@@ -6,12 +6,12 @@ import { motion } from 'motion/react';
 
 export const HeroText = () => {
   return (
-    <div className="relative z-10 mx-auto max-w-3xl">
+    <div className="relative z-10 mx-auto w-full max-w-3xl lg:mx-0">
       <motion.h1
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 1.4 }}
-        className="mb-6 text-center text-3xl leading-tight font-bold text-gray-800 md:text-4xl lg:text-5xl dark:text-gray-100"
+        className="mb-6 text-center text-3xl leading-tight font-bold text-gray-800 md:text-4xl lg:text-left lg:text-5xl dark:text-gray-100"
       >
         Soluciones financieras para la empresa moderna
       </motion.h1>
@@ -20,7 +20,7 @@ export const HeroText = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 1.6 }}
-        className="text-center text-xl leading-relaxed text-gray-700 md:my-6 md:text-2xl lg:text-3xl dark:text-gray-300"
+        className="text-center text-xl leading-relaxed text-gray-700 md:my-6 md:text-2xl lg:text-left lg:text-3xl dark:text-gray-300"
       >
         Transformamos la contabilidad tradicional con soluciones
         <motion.span
@@ -55,7 +55,7 @@ export const HeroText = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 1.8 }}
-        className="mt-10 flex justify-center"
+        className="mt-10 flex justify-center lg:justify-start"
       >
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="w-auto">
           <Button
@@ -67,14 +67,6 @@ export const HeroText = () => {
           </Button>
         </motion.div>
       </motion.div>
-
-      {/* Visual separator */}
-      <motion.div
-        className="mx-auto mt-16 h-px w-36 bg-gradient-to-r from-transparent via-[color:var(--sicofe-purple)]/50 to-transparent"
-        initial={{ scaleX: 0, opacity: 0 }}
-        animate={{ scaleX: 1, opacity: 1 }}
-        transition={{ duration: 1, delay: 2 }}
-      />
     </div>
   );
 };

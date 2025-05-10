@@ -9,9 +9,9 @@ export const HeroImageBox = () => {
       initial={{ opacity: 0, x: 20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 1, delay: 0.3 }}
-      className="relative z-10 flex flex-1 items-center justify-center px-8 lg:px-0"
+      className="relative z-10 flex flex-1 items-center justify-center px-4 sm:px-8 lg:px-0"
     >
-      <div className="relative aspect-square w-full max-w-md overflow-hidden rounded-2xl bg-white/20 p-4 shadow-[0_20px_50px_rgba(var(--sicofe-purple),0.10)] backdrop-blur-md dark:bg-[#1a1a2e]/80 dark:shadow-[0_20px_50px_rgba(var(--sicofe-purple-dark),0.2)]">
+      <div className="relative aspect-square w-full max-w-xs overflow-hidden rounded-2xl bg-white/20 p-4 shadow-[0_20px_50px_rgba(var(--sicofe-purple),0.10)] backdrop-blur-md sm:max-w-sm md:max-w-md dark:bg-[#1a1a2e]/80 dark:shadow-[0_20px_50px_rgba(var(--sicofe-purple-dark),0.2)]">
         {/* Inner container with gradient background */}
         <div className="absolute inset-0 overflow-hidden rounded-2xl">
           <div className="absolute inset-0 bg-gradient-to-br from-white/40 to-[#f0f0fa]/30 dark:from-[#1a1a2e] dark:to-[#2a2a40]" />
