@@ -10,9 +10,10 @@ export const sections = {
   company: {
     title: 'Empresa',
     items: [
-      { label: 'Nosotros', href: '/nosotros' },
+      { label: 'Nosotros', href: '/AboutUs' }, // Updated href
+      { label: 'Servicios', href: '/Services' }, // Added new Services link
       { label: 'Equipo', href: '/equipo' },
-      { label: 'Contacto', href: '/contacto' }
+      { label: 'Contacto', href: '/Contact' } // Updated href
     ]
   },
   resources: {

@@ -7,7 +7,7 @@ const navItems = [
   },
   {
     name: 'Servicios',
-    link: '/services'
+    link: '/Services' // Changed to uppercase 'S' to match the new page path
   },
   {
     name: 'Contacto',
