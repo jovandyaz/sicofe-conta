@@ -1,6 +1,6 @@
 'use client';
 
-import { Brands, ContactSection, Hero, IntroSection, Services } from '@/components';
+import { ContactSection, Hero, IntroSection, Services } from '@/components';
 
 export default function Home() {
   return (
@@ -10,8 +10,6 @@ export default function Home() {
       <IntroSection />
 
       <Services />
-
-      <Brands />
 
       <ContactSection />
 

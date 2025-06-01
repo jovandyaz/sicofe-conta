@@ -3,7 +3,7 @@ import { FloatingNav } from '@/components/ui';
 const navItems = [
   {
     name: 'Nosotros',
-    link: '/AboutUs'
+    link: '/about-us'
   },
   {
     name: 'Servicios',

@@ -1,9 +1,10 @@
 'use client';
 
-import { HeroLogo } from '@/components/Hero/components';
+import Link from 'next/link';
+import { Button, HeroLogo } from '@/components';
 import { motion } from 'motion/react';
 
-export default function AboutUs() {
+export default function AboutUsPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#f7f7fd] to-[#f0f0f8] pt-24 dark:from-[#0f0f19] dark:to-[#16162a]">
       <div className="mx-auto max-w-7xl px-6 py-24 md:px-10">
@@ -28,6 +29,28 @@ export default function AboutUs() {
                 </p>
               </motion.div>
             </div>
+
+            {/* CTA Button */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 1.8 }}
+              className="mt-10 flex justify-center lg:justify-start"
+            >
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="w-auto"
+              >
+                <Button
+                  asChild
+                  size="lg"
+                  className="rounded-full bg-gradient-to-r from-[color:var(--sicofe-purple)] to-[color:var(--sicofe-purple-dark)] px-10 py-7 text-xl font-medium shadow-lg transition-all hover:shadow-xl dark:from-[color:var(--sicofe-purple)] dark:to-[color:var(--sicofe-purple-light)]"
+                >
+                  <Link href="/services">Conoce nuestros servicios</Link>
+                </Button>
+              </motion.div>
+            </motion.div>
           </motion.div>
 
           {/* Right side - Description */}
