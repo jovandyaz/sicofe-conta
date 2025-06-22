@@ -74,9 +74,6 @@ export default function ServicesPage() {
       {/* Hero Section */}
       <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-24">
         <div className="bg-grid-pattern absolute inset-0 opacity-5"></div>
-        <div className="hero-circle -top-20 -right-20 h-96 w-96"></div>
-        <div className="hero-circle -bottom-20 -left-20 h-80 w-80"></div>
-
         <div className="relative mx-auto max-w-7xl px-6 md:px-10">
           <ScrollReveal>
             <div className="mx-auto max-w-3xl text-center">

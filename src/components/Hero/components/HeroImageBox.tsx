@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { SICOFE_LOGO } from '@/lib/constants';
 import { motion } from 'motion/react';
 
 export const HeroImageBox = () => {
@@ -58,7 +59,7 @@ export const HeroImageBox = () => {
             }}
           >
             <Image
-              src="/sicofe_logo.png"
+              src={SICOFE_LOGO}
               alt="SICOFE Contabilidad"
               fill
               style={{ objectFit: 'contain' }}

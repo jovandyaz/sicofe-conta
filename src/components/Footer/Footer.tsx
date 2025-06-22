@@ -2,7 +2,12 @@ import Link from 'next/link';
 import { IconLogo, SocialLink } from '../ui';
 import { sections } from './sections.constants';
 import { ScrollReveal } from '@/components';
-import { CURRENT_YEAR, SICOFE_INSTAGRAM_URL, SICOFE_WHATSAPP_URL } from '@/lib/constants';
+import {
+  CURRENT_YEAR,
+  SICOFE_INSTAGRAM_URL,
+  SICOFE_LOGO,
+  SICOFE_WHATSAPP_URL
+} from '@/lib/constants';
 import { RiFacebookFill, RiInstagramFill, RiLinkedinFill, RiWhatsappFill } from 'react-icons/ri';
 
 export const socialLinks = [
@@ -38,7 +43,7 @@ export const Footer = () => {
             <div className="col-span-1 lg:col-span-2">
               <Link href="/" className="mb-6 flex items-center space-x-2">
                 <IconLogo
-                  src="/sicofe_logo.png"
+                  src={SICOFE_LOGO}
                   alt="SICOFE Contabilidad"
                   width={50}
                   height={50}

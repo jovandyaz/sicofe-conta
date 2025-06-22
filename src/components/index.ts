@@ -12,3 +12,6 @@ export * from './IntroSection';
 export * from './Brands';
 export * from './ContactSection';
 export * from './ScrollReveal';
+export * from './ContactForm';
+export * from './ContactInfo';
+export * from './ContactSuccess';

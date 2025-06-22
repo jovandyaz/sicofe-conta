@@ -3,6 +3,7 @@
 import React, { JSX, useState } from 'react';
 import Link from 'next/link';
 import { IconLogo, MenuButton, NavLink, ThemeToggle } from '@/components/ui';
+import { SICOFE_LOGO } from '@/lib/constants';
 import { cn } from '@/lib/utils';
 import { AnimatePresence, motion, useMotionValueEvent, useScroll } from 'motion/react';
 
@@ -68,7 +69,7 @@ export const FloatingNav = ({
         )}
       >
         <Link href="/" className="relative z-10" onClick={handleNavClick}>
-          <IconLogo src="/sicofe_logo.png" alt="Sicofe" width={40} height={40} />
+          <IconLogo src={SICOFE_LOGO} alt="Sicofe" width={40} height={40} />
         </Link>
 
         <div className="hidden items-center space-x-8 md:flex">

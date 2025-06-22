@@ -1,25 +1,10 @@
 import { FloatingNav } from '@/components/ui';
-
-const navItems = [
-  {
-    name: 'Nosotros',
-    link: '/about-us'
-  },
-  {
-    name: 'Servicios',
-    link: '/services'
-  },
-  {
-    name: 'Contacto',
-    link: '/contact',
-    highlighted: true
-  }
-];
+import { BASE_NAV_ITEMS } from '@/config/routes';
 
 export const Navbar = () => {
   return (
     <nav className="fixed top-0 right-0 left-0 z-50 w-full">
-      <FloatingNav navItems={navItems} />
+      <FloatingNav navItems={BASE_NAV_ITEMS} />
     </nav>
   );
 };
