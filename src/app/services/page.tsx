@@ -10,6 +10,7 @@ import {
   ScrollReveal,
   Separator
 } from '@/components';
+import Link from 'next/link';
 import {
   ArrowRight,
   BookOpen,
@@ -95,14 +96,16 @@ export default function ServicesPage() {
                   Solicitar Cotización
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="rounded-full border-[color:var(--sicofe-purple)] px-10 py-7 text-xl font-medium text-[color:var(--sicofe-purple)] hover:bg-[color:var(--sicofe-purple)] hover:text-white"
-                >
-                  <Phone className="mr-2 h-4 w-4" />
-                  Contactar Ahora
-                </Button>
+                <Link href="/contac">
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="rounded-full border-[color:var(--sicofe-purple)] px-10 py-7 text-xl font-medium text-[color:var(--sicofe-purple)] hover:bg-[color:var(--sicofe-purple)] hover:text-white"
+                  >
+                    <Phone className="mr-2 h-4 w-4" />
+                    Contactar Ahora
+                  </Button>
+                </Link>
               </div>
             </div>
           </ScrollReveal>
@@ -187,13 +190,15 @@ export default function ServicesPage() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <Button
-                    className="w-full rounded-full bg-gradient-to-r from-[color:var(--sicofe-purple)] to-[color:var(--sicofe-purple-dark)] px-10 py-7 text-xl font-medium shadow-lg transition-all hover:shadow-xl dark:from-[color:var(--sicofe-purple)] dark:to-[color:var(--sicofe-purple-light)]"
-                    size="lg"
-                  >
-                    <Mail className="mr-2 h-4 w-4" />
-                    Solicitar Cotización Gratuita
-                  </Button>
+                  <Link href="/contac">
+                    <Button
+                      className="w-full rounded-full bg-gradient-to-r from-[color:var(--sicofe-purple)] to-[color:var(--sicofe-purple-dark)] px-10 py-7 text-xl font-medium shadow-lg transition-all hover:shadow-xl dark:from-[color:var(--sicofe-purple)] dark:to-[color:var(--sicofe-purple-light)]"
+                      size="lg"
+                    >
+                      <Mail className="mr-2 h-4 w-4" />
+                      Solicitar Cotización Gratuita
+                    </Button>
+                  </Link>
                   <Separator />
                   <div className="text-center text-sm text-gray-700 dark:text-gray-300">
                     <p>Respuesta garantizada en menos de 24 horas</p>

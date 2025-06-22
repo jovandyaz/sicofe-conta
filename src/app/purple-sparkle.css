@@ -1,0 +1,100 @@
+@keyframes bubble-move {
+  0% {
+    transform: translateY(0) scale(1) translateX(0);
+  }
+  30% {
+    transform: translateY(-30vh) scale(1.08) translateX(10px);
+  }
+  60% {
+    transform: translateY(-60vh) scale(0.95) translateX(-12px);
+  }
+  100% {
+    transform: translateY(-100vh) scale(1.1) translateX(0);
+  }
+}
+
+.bubble-move {
+  animation: bubble-move 10s linear infinite;
+  will-change: transform;
+}
+@keyframes contact-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-contact-fade-in {
+  animation: contact-fade-in 0.9s cubic-bezier(0.4,0.2,0.6,1) both;
+}
+@keyframes sparkle-wave {
+  0% {
+    transform: translateY(0) scale(0.8);
+    opacity: 0.5;
+  }
+  20% {
+    transform: translateY(-18px) scale(1.1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(18px) scale(1.2);
+    opacity: 0.7;
+  }
+  80% {
+    transform: translateY(-10px) scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(0) scale(0.8);
+    opacity: 0.5;
+  }
+}
+
+.sparkle-wave {
+  animation: sparkle-wave 5s infinite cubic-bezier(0.4,0.2,0.6,0.8);
+}
+@keyframes purple-sparkle {
+  0% {
+    opacity: 0.2;
+    transform: scale(0.7);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0.2;
+    transform: scale(0.7);
+  }
+}
+
+.animate-purple-sparkle {
+  animation: purple-sparkle 3.5s infinite ease-in-out;
+
+@keyframes purple-sparkle {
+  0% {
+    opacity: 0.2;
+    transform: scale(0.7) translateY(0px);
+  }
+  30% {
+    opacity: 0.7;
+    transform: scale(1.2) translateY(-20px);
+  }
+  60% {
+    opacity: 0.7;
+    transform: scale(1.2) translateY(20px);
+  }
+  100% {
+    opacity: 0.2;
+    transform: scale(0.7) translateY(0px);
+  }
+}
+
+.animate-purple-sparkle {
+  animation: purple-sparkle 4.5s infinite ease-in-out;
+}
+}

@@ -24,7 +24,7 @@ export const ContactSection = () => {
               </p>
             </div>
             <Link
-              href="/contacto"
+              href="/contac"
               className="inline-flex items-center justify-center rounded-md bg-[color:var(--sicofe-purple)] px-6 py-3 text-base font-medium text-white transition-all duration-200 hover:bg-[color:var(--sicofe-purple-dark)] hover:shadow-md"
             >
               Trabajemos juntos
